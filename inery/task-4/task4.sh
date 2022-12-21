@@ -16,6 +16,8 @@ Color_Off='\033[0m'
 
 GIT_TO_FORK=inery-blockchain/inery-testnet-faucet-tasks
 
+rm -rf inery-testnet-faucet-tasks
+
 StepBox() {
   local text="$1"
   local box_width="$2"
@@ -34,11 +36,6 @@ StepBox "Setup data sebelum menajalankan task 4" 80 "-"
 read -p "$(printf "\033[33mMasukkan nama inery account kalian:\033[0m ")" INERY_ACCOUNT
 read -p "$(printf "\033[33mMasukkan IP Node kalian:\033[0m ")" NODE_URL
 read -p "$(printf "\033[33mMasukkan username github kalian:\033[0m ")" GITHUB_ACCOUNT
-
-
-
-
-rm -rf lab
 
 pre_setup(){
   if which git > /dev/null; then
@@ -75,7 +72,7 @@ pre_setup(){
 
 git_fork() {
   gh repo fork $GIT_TO_FORK --clone=true --remote=true
-  cd lab
+  cd inery-testnet-faucet-tasks
 }
 
 checkout_branch(){
