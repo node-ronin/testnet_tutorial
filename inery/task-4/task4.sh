@@ -31,7 +31,7 @@ StepBox() {
   printf "%s\n$Color_Off" "$(printf "%$((box_width))s" "" | tr ' ' "$box_char")"
 }
 
-StepBox "Setup data sebelum menajalankan task 4" 80 "-"
+StepBox "Setup data sebelum menjalankan task 4" 80 "-"
 
 read -p "$(printf "\033[33mMasukkan nama inery account kalian:\033[0m ")" INERY_ACCOUNT
 read -p "$(printf "\033[33mMasukkan IP Node kalian:\033[0m ")" NODE_URL
