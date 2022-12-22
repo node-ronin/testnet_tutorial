@@ -45,12 +45,12 @@ pre_setup(){
     sudo apt install git -y
   fi
   
-  if which node > /dev/null; then
-    printf "\033[33mNodeJS sudah terinstall, nggak perlu install lagi\033[0m\n"
-  else
-    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-    sudo apt install -y nodejs
-  fi
+#  if which node > /dev/null; then
+#    printf "\033[33mNodeJS sudah terinstall, nggak perlu install lagi\033[0m\n"
+#  else
+#    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+#    sudo apt install -y nodejs
+#  fi
 
   if which curl > /dev/null; then
     printf "\033[33mCurl sudah terinstall, nggak perlu install lagi\033[0m\n"
