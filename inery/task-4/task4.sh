@@ -1,4 +1,5 @@
 #bin/bash
+sudo dpkg --configure -a
 exists()
 {
   command -v "$1" >/dev/null 2>&1
