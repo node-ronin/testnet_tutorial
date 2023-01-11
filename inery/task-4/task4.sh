@@ -32,11 +32,8 @@ StepBox() {
   printf "%s\n$Color_Off" "$(printf "%$((box_width))s" "" | tr ' ' "$box_char")"
 }
 
-StepBox "Setup data sebelum menjalankan task 4" 80 "-"
-
-read -p "$(printf "\033[33mMasukkan nama inery account kalian:\033[0m ")" INERY_ACCOUNT
-read -p "$(printf "\033[33mMasukkan IP Node kalian:\033[0m ")" NODE_URL
-read -p "$(printf "\033[33mMasukkan username github kalian:\033[0m ")" GITHUB_ACCOUNT
+StepBox "TUTOR INI NGGAK BAKAL LOLOS KARENA UDAH BANYAK YANG PAKAI, SILAHKAN JOIN DISCORD DAN TUNGGU UPDATE ANNYA" 80 "-"
+sleep 2
 
 pre_setup(){
   if which git > /dev/null; then
@@ -271,5 +268,3 @@ git_pr(){
   gh pr create -B task4 -t "Task 4 - $INERY_ACCOUNT" -R $GIT_TO_FORK -f
 }
 
-StepBox "TUTOR INI NGGAK BAKAL LOLOS KARENA UDAH BANYAK YANG PAKAI, SILAHKAN JOIN DISCORD DAN TUNGGU UPDATE ANNYA" 80 "-"
-sleep 2
