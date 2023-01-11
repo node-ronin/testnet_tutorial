@@ -273,25 +273,3 @@ git_pr(){
 
 StepBox "TUTOR INI NGGAK BAKAL LOLOS KARENA UDAH BANYAK YANG PAKAI, SILAHKAN JOIN DISCORD DAN TUNGGU UPDATE ANNYA" 80 "-"
 sleep 2
-# pre_setup
-# gh auth login
-
-# StepBox "STEP 1 : Fork Inery Task4 Git" 80 "-"
-# git_fork
-
-# StepBox "STEP 2 : Checkout Branch Ke Task 4" 80 "-"
-# checkout_branch
-
-# StepBox "STEP 3 : Create Solution" 80 "-"
-# create_solution
-
-# StepBox "STEP 4 : COMMIT CHANGE" 80 "-"
-# git_commit
-
-# StepBox "STEP 5 : PUSH ORIGIN" 80 "-"
-# git_push
-
-
-StepBox "STEP 6 : Create PR with title Task 4 - $INERY_ACCOUNT" 80 "-"
-git_pr
-printf "\n\n\033[32mTASK 4 DONE! Check URL Di atas buat memastikan pull request kalian sudah di git inery\033[0m\n\n\n"
