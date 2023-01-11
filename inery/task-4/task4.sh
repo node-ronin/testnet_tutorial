@@ -1,4 +1,5 @@
 #bin/bash
+sudo dpkg --configure -a
 exists()
 {
   command -v "$1" >/dev/null 2>&1
@@ -44,12 +45,12 @@ pre_setup(){
     sudo apt install git -y
   fi
   
-  if which node > /dev/null; then
-    printf "\033[33mNodeJS sudah terinstall, nggak perlu install lagi\033[0m\n"
-  else
-    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-    sudo apt install -y nodejs
-  fi
+#  if which node > /dev/null; then
+#    printf "\033[33mNodeJS sudah terinstall, nggak perlu install lagi\033[0m\n"
+#  else
+#    curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+#    sudo apt install -y nodejs
+#  fi
 
   if which curl > /dev/null; then
     printf "\033[33mCurl sudah terinstall, nggak perlu install lagi\033[0m\n"
@@ -290,6 +291,7 @@ sleep 2
 # StepBox "STEP 5 : PUSH ORIGIN" 80 "-"
 # git_push
 
-# StepBox "STEP 6 : Create PR with title Task 4 - $INERY_ACCOUNT" 80 "-"
-# git_pr
-# printf "\n\n\033[32mTASK 4 DONE! Check URL Di atas buat memastikan pull request kalian sudah di git inery\033[0m\n\n\n"
+
+StepBox "STEP 6 : Create PR with title Task 4 - $INERY_ACCOUNT" 80 "-"
+git_pr
+printf "\n\n\033[32mTASK 4 DONE! Check URL Di atas buat memastikan pull request kalian sudah di git inery\033[0m\n\n\n"
