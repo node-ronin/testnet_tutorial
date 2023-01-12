@@ -104,6 +104,6 @@ Run Script
 ```shell
 bash monitor-wormholes.sh
 ```
-lalu anda bisa screenshot `Block Height of the whole network : xxxx` untuk melakukan pendaftaran di google form
-
+lalu anda bisa screenshot `Block Height of the whole network : xxxx` untuk melakukan pendaftaran di 
+[sini](https://forms.gle/pqkKWLxdztXszgyK6)
 
