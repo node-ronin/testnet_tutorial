@@ -97,7 +97,9 @@ masukan private key yg  sudah di buat. dan selesai
 #### Monitor Node
 
 Download Script monitoring
-
+```shell
+wget https://raw.githubusercontent.com/KazamiHazaki/testnet_tutorial/main/wormholes/monitor-wormholes.sh
+```
 Run Script
 ```shell
 bash monitor-wormholes.sh
