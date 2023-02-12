@@ -3,6 +3,9 @@
 
 
 **1. Download Dockerfile**
+```shell
+wget https://testnet-1-files.elixir.finance/Dockerfile
+```
 
 ![](https://ajeuwbhvhr.cloudimg.io/colony-recorder.s3.amazonaws.com/files/2023-02-12/a2556c85-e2c2-4b7b-9261-9486a8d73763/user_cropped_screenshot.jpeg?tl_px=191,0&amp;br_px=937,246&amp;sharp=0.8&amp;width=560)
 
@@ -60,4 +63,14 @@ setelah berhasil di install cek validator kalian di
 - https://metrics.elixir.finance/
 
 search dengan menekan `ctrl + f` cari menggunakan address metamask
+
+# Connect Discord
+
+setelah mendeploy validator berhasil lanjut dengan menghubungkan Discord 
+join discord elixir : https://discord.gg/phhTzeDG86
+
+![image](https://user-images.githubusercontent.com/120631625/218313432-8c8c1dfe-c053-49a1-a66f-14fce9c6ee8c.png)
+
+kemudian ke channel `#whitelist` hubungkan twitter dan masukan address yg sama dengan validator
+
 
