@@ -1,0 +1,30 @@
+site_name: Node Ronin Testnet Tutorial
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: slate
+    primary: amber
+    accent: amber
+  features:
+    - content.code.annotate
+    - navigation.expand
+    - content.code.copy
+
+plugins:
+  - search
